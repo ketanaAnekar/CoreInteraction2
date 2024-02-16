@@ -1,0 +1,35 @@
+body{
+    background-color:rgb(174, 0, 255)
+}
+.qu{
+    display:block;
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    font-family: "nautica", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 100px;
+color:rgb(255, 255, 255)
+}
+.p{
+    display: block;
+    position: absolute;
+    top: 200px;
+    text-align: center;
+    color:rgb(255, 255, 255)
+}
+.p2{
+    display: block;
+    position: relative;
+    top: 210px;
+    text-align: center;
+    color:rgb(255, 255, 255)
+}
+.btn{
+    display: inline-block;
+    margin-bottom: 0%;
+    position: absolute;
+    bottom: 0%;
+    right:0%;
+}
