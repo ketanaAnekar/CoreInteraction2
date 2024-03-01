@@ -1,0 +1,94 @@
+body{
+    background-color:rgb(255, 145, 1);
+    cursor: pointer;
+}
+.peri{
+    display:block;
+    position: absolute;
+    top: 5vw;
+    left: 17vw;
+    font-family: "josefin-sans", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 7vw;
+color: greenyellow;
+opacity: .5;
+}
+.p{
+    position: absolute;
+    top: 260px;
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: greenyellow;
+    
+}
+.p2{
+    position: relative;
+    top: 370px;
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
+    color: greenyellow;
+}
+.butt{
+    border: none; 
+               color: greenyellow;
+               text-align: center; /* Center text */
+               text-decoration: none; /* Remove underlines */
+               display: inline-block; /* Display as inline block */
+               font-size: 30px; /* Font size */
+               margin: 6px 4px; /* Margin */
+               transition-duration: 0.4s; /* Transition duration */
+               cursor: pointer; /* Cursor style */
+               border-radius: 12px;
+   }
+.btn{
+    display: inline-block;
+    margin-top: 0%;
+    position: absolute;
+    top:0%;
+    right:0%;
+}
+
+
+.p, .p2 {
+    display: none; /* Initially hide the paragraphs */
+    position: absolute;
+    top: 0vw;
+    width: 100%;
+}
+
+.p {
+    font-family: "forma-djr-display", sans-serif;
+font-weight: 400;
+font-style: italic;
+    animation: fallP 1s ease-in-out; /* Apply animation for p class */
+}
+
+.p2 {
+    font-family: "forma-djr-display", sans-serif;
+font-weight: 400;
+font-style: italic;
+    animation: fallP2 1s ease-in-out; /* Apply animation for p2 class */
+}
+.random-text {
+    position: absolute;
+    font-family: "forma-djr-display", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2vw;
+    color: greenyellow;
+    opacity: .6;
+ 
+}
+@keyframes fallP {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(calc(100vh - 100%)); }
+}
+
+/* Define CSS animation for falling for p2 class */
+@keyframes fallP2 {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(calc(100vh - 50%)); }
+}

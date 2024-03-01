@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qjh7mei.css">
+    <link rel="icon" type="image/png" href="favicon1.png">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="ex">
+        <h1>EXCLAMATION MARK</h1>
+    </div>
+    <div class="ex2">
+        <h1>!</h1>
+    </div>
+    <div class="ex3">
+        <h1>!</h1>
+    </div>
+    <div class="ex4">
+        <h1>!</h1>
+    </div>
+    <div class="ex5">
+        <h1>!</h1>
+    </div>
+    <div class="ex6">
+        <h1>!</h1>
+    </div>
+    <div class="ex7">
+        <h1>!</h1>
+    </div>
+</div>
+    <div class="p">
+        <p>Exclamation marks have the same difficulty</p>
+    </div>
+    <div class="btn">
+        <a href="../page1/index.html" class="butt">&#9664;</a>
+        <a href="../index.html" class="butt">&#127968;</a>
+        <a href="../page3/index.html" class="butt">&#9654;</a>
+    </div>
+    <script>
+       document.querySelectorAll('.ex, .ex2, .ex3, .ex4, .ex5, .ex6, .ex7').forEach(item => {
+        item.addEventListener('click', event => {
+            const text = "Exclamation marks have the same difficulty";
+            const words = text.split(' ');
+            words.forEach(word => {
+                const randomText = document.createElement('div');
+                randomText.classList.add('random-text');
+                randomText.style.left = Math.random() * (window.innerWidth - 200) + 'px';
+                randomText.style.top = Math.random() * (window.innerHeight - 200) + 'px';
+                randomText.textContent = word;
+                document.body.appendChild(randomText);
+            });
+        });
+    });
+    </script>
+</body>
+</html>

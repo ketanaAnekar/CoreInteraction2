@@ -1,0 +1,123 @@
+body{
+    background-color: red;
+    cursor: pointer;
+}
+
+.p{
+    display: flexbox;
+    font-family: "poppins", sans-serif;
+font-weight: 300;
+font-style: normal;
+font-size: xx-large;
+display: block;
+color: rgb(255, 102, 250);
+opacity: .5;
+position: absolute;
+top: 0px;
+
+}
+.p1{
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: x-large;
+    display: block;
+    color:rgb(255, 55, 248);
+    opacity: .6;
+    position: absolute;
+    top: 0px;  
+}
+.p2{
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: x-large;
+    display: block;
+    color: rgb(255, 151, 252);
+    opacity: .3;
+    position: absolute;
+    bottom: 0px;  
+}
+
+.qm{
+    margin: 4em;
+    position: absolute;
+    top: -15vw;
+    left: 2vw;
+    font-family: "century-gothic", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 5vw;
+color:  rgb(255, 0, 157);
+cursor: pointer;
+transition: .3s;
+text-align: center;
+}
+.qm:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+.butt{
+ border: none; 
+            color:  rgb(255, 102, 250);
+            text-align: center; /* Center text */
+            text-decoration: none; /* Remove underlines */
+            display: inline-block; /* Display as inline block */
+            font-size: 30px; /* Font size */
+            margin: 6px 4px; /* Margin */
+            transition-duration: 0.4s; /* Transition duration */
+            cursor: pointer; /* Cursor style */
+            border-radius: 12px;
+}
+.btn{
+    display: inline-block;
+    margin-top: 0%;
+    position: absolute;
+    top:0%;
+    right:0%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.falling-question-mark {
+    position: absolute;
+    color: rgb(255, 0, 157);
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-size: 10rem;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+}
+
+.random-text {
+    position: absolute;
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem; /* Adjust as needed */
+    color: rgb(255, 66, 183);
+}
+@media screen and (max-width: 1500px){
+    body{
+        background-color: rgb(255, 0, 0);
+    }
+.qm{
+    position: absolute;
+    right: 3rem;
+}
+
+}
+@media screen and (max-width: 1430px){
+    body{
+        background-color: rgb(0, 255, 128);
+    }
+.qm{
+    position: absolute;
+    right: 5rem;
+}
+}
+
+
+    

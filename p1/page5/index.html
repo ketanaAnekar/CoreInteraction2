@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qjh7mei.css">
+    <link rel="icon" type="image/png" href="favicon5.png">
+    <title>Document</title>
+</head>
+<body>
+    <div class="apo">
+    <h1>APOSTROPHE'</h1>
+</div>
+<div class="p">
+    <p>One other little punctuation mark one can have feelings about and that is the apostrophe for possession. Well feel as you like about that, I can see and I do see that for many that for some the possessive case apostrophe has a gentle tender insinuation that makes it very difficult to definitely decide to do without it. One does do without it, I do, I mostly always do, but I cannot deny that from time to time I feel myself having regrets and from time to time I put it in to make the possessive case. </p>
+</div>
+<div class="p2">
+    <p>I absolutely do not like it and leaving it out I feel no regret, there it is unnecessary and not ornamental but inside a word and its s well perhaps, perhaps it does appeal by its weakness to your weakness. At least at any rate from time to time I do find myself letting it alone if it has come in and sometimes it has come in. I cannot positively deny but that I do from time to time let it come in. 
+    </p>
+</div>
+<div class="btn">
+    <a href="../page4/index.html" class="butt">&#9664;</a>
+    <a href="../index.html" class="butt">&#127968;</a>
+    <a href="../page6/index.html" class="butt">&#9654;</a>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+            const apo = document.querySelector('.apo');
+            apo.addEventListener('click', function() {
+                animateApostrophe();
+                animateText('.p');
+                animateText('.p2');
+            });
+        });
+
+        function animateApostrophe() {
+            const numberOfApostrophes = 10; // Change this number to control the number of apostrophes
+            for (let i = 0; i < numberOfApostrophes; i++) {
+                const randomApostrophe = document.createElement('div');
+                randomApostrophe.textContent = "'";
+                randomApostrophe.classList.add('random-apostrophe');
+                randomApostrophe.style.left = Math.random() * (window.innerWidth - 100) + 'px';
+                randomApostrophe.style.top = Math.random() * (window.innerHeight - 100) + 'px';
+                document.body.appendChild(randomApostrophe);
+            }
+        }
+
+        function animateText(selector) {
+            const paragraph = document.querySelector(selector);
+            const text = paragraph.textContent;
+            const floatingText = document.createElement('div');
+            floatingText.textContent = text;
+            floatingText.classList.add('floating-text');
+            floatingText.style.left = Math.random() * (window.innerWidth - 200) + 'px';
+            floatingText.style.top = Math.random() * (window.innerHeight - 200) + 'px';
+            document.body.appendChild(floatingText);
+        }
+</script>
+</body>
+</html>

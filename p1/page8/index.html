@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/qjh7mei.css">
+    <link rel="icon" type="image/png" href="favicon7.png">
     <title>Document</title>
 </head>
 <body>
@@ -31,8 +32,69 @@
         </p>
 </div>
 <div class="btn">
-    <a href="../page 7/index.html"><button>BACK</button></a>
-    <a href="../index.html"><button>HOME</button></a>
+    <a href="../page7/index.html" class="butt">&#9664;</a>
+    <a href="../index.html" class="butt">&#127968;</a>
 </div>
+<script>
+    // JavaScript function to animate commas falling from the top
+    document.addEventListener("DOMContentLoaded", function() {
+            animateCommas();
+
+            const paragraphs = document.querySelectorAll('.p');
+            paragraphs.forEach(p => {
+                animateTextFall(p);
+            });
+        });
+
+        function animateCommas() {
+            const comma = document.createElement('span');
+            comma.textContent = ',';
+            comma.classList.add('falling-text');
+            comma.style.left = Math.random() * (window.innerWidth - 20) + 'px'; // Random horizontal position
+            document.body.appendChild(comma);
+            animate(comma);
+        }
+
+        function animate(element) {
+            const endYPos = window.innerHeight - 20; // Move to the bottom of the window
+            const duration = Math.random() * 3000 + 2000; // Random duration between 2000ms and 5000ms
+            let startTime = null;
+
+            function step(currentTime) {
+                if (!startTime) startTime = currentTime;
+                const progress = currentTime - startTime;
+                const percentage = progress / duration;
+                const newYPos = percentage * endYPos;
+                element.style.top = newYPos + 'px';
+
+                if (percentage < 1) {
+                    requestAnimationFrame(step);
+                } else {
+                    element.remove();
+                }
+            }
+            requestAnimationFrame(step);
+        }
+
+        function animateTextFall(element) {
+            const text = element.textContent;
+            const randomText = document.createElement('div');
+            randomText.textContent = text;
+            randomText.classList.add('falling-text');
+            randomText.style.left = Math.random() * (window.innerWidth - 200) + 'px'; // Random horizontal position
+            randomText.style.color = getRandomColor(); // Random text color
+            document.body.appendChild(randomText);
+            animate(randomText);
+        }
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+</script>
 </body>
 </html>

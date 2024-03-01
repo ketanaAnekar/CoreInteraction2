@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qjh7mei.css">
+    <link rel="icon" type="image/png" href="favicon4.png">
+    <title>Document</title>
+</head>
+<body>
+    <div class="qu">
+    <h1>"Quotation marks"</h1>
+</div>
+<div class="toggle-button" onclick="toggleText()"></div>
+
+<div class="p"style="display: none;">
+<p> And also quotation marks, they are unnecessary, they are ugly, they spoil the line of the writing or the printing and anyway what is the use, if you do not know that a question is a question what is the use of its being a question. The same thing is true of a quotation. 
+</p>
+<div class="p2"style="display: none;">
+    <p>When I first began writing I found it simply impossible to use question marks and quotation marks and exclamation points and now anybody sees it that way. Perhaps some day they will see it some other way but not at any rate anybody can and does see it that way.</p>
+</div>
+</div>
+<div class="btn">
+    <a href="../page2/index.html" class="butt">&#9664;</a>
+    <a href="../index.html" class="butt">&#127968;</a>
+    <a href="../page4/index.html" class="butt">&#9654;</a>
+</div>
+<script>
+     function toggleText() {
+            const paragraph1 = document.querySelector('.p');
+            const paragraph2 = document.querySelector('.p2');
+            if (paragraph1.style.display === 'none') {
+                paragraph1.style.display = 'block';
+                paragraph2.style.display = 'block';
+            } else {
+                paragraph1.style.display = 'none';
+                paragraph2.style.display = 'none';
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const quotation = document.querySelector('.qu');
+            const paragraph1 = document.querySelector('.p');
+            const paragraph2 = document.querySelector('.p2');
+            quotation.addEventListener('click', function() {
+                animateTextFall(paragraph1);
+                animateTextFall(paragraph2);
+            });
+        });
+
+        function animateTextFall(element) {
+            const text = element.textContent;
+            const randomText = document.createElement('div');
+            randomText.textContent = text;
+            randomText.classList.add('random-text');
+            randomText.style.left = Math.random() * (window.innerWidth - 200) + 'px';
+            randomText.style.top = '-50px'; // Start from above the viewport
+            document.body.appendChild(randomText);
+            animate(randomText);
+        }
+
+        function animate(element) {
+            const endYPos = window.innerHeight + 100; // Move slightly below the viewport
+            const duration = Math.random() * 3000 + 2000; // Random duration between 2000ms and 5000ms
+            let startTime = null;
+
+            function step(currentTime) {
+                if (!startTime) startTime = currentTime;
+                const progress = currentTime - startTime;
+                const percentage = progress / duration;
+                const newYPos = percentage * endYPos;
+                element.style.top = newYPos + 'px';
+
+                if (percentage < 1) {
+                    requestAnimationFrame(step);
+                } else {
+                    element.remove();
+                }
+            }
+            requestAnimationFrame(step);
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(238, 0, 255);
+}
+.com{
+    display: block;
+    position: absolute;
+    top: -1vw;
+    left: 11vw;
+    font-family: "area-normal", sans-serif;
+font-weight: 600;
+font-size: 7vw;
+font-style: italic;
+opacity: .6;
+}
+.p{
+    position: absolute;
+    top: 120px;
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.butt{
+    border: none; 
+               color: black;
+               text-align: center; /* Center text */
+               text-decoration: none; /* Remove underlines */
+               display: inline-block; /* Display as inline block */
+               font-size: 30px; /* Font size */
+               margin: 6px 4px; /* Margin */
+               transition-duration: 0.4s; /* Transition duration */
+               cursor: pointer; /* Cursor style */
+               border-radius: 12px;
+   }
+.btn{
+    display: inline-block;
+    margin-top: 0%;
+    position: absolute;
+    top:0%;
+    right:0%;
+}
+.falling-text {
+    position: absolute;
+    font-family: "poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 5vw;
+    color: #fff;
+    user-select: none;
+}

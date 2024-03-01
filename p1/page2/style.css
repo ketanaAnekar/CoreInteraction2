@@ -1,0 +1,193 @@
+body{
+    background-color:rgb(0, 85, 255)
+}
+.ex {
+    display: flex;
+    position: absolute;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vw; 
+    color: white;
+    opacity: .5;
+    transition: .7s;
+    top: 30vh;
+    left: 10vw;
+}
+.ex:hover{
+    transform: scale(1.1);
+    transition: .7s;
+    cursor: pointer;
+}
+.ex2 {
+    display: flex;
+    position: absolute;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10vw;
+    color: white;
+    opacity: .5;
+    transition: .7s;
+    top: 2vh; 
+    left: 7vw;
+}
+.ex2:hover{
+    transform: scale(1.5);
+    transition: .7s;
+    cursor: pointer;
+}
+
+.ex3 {
+    display: flex;
+    position: absolute;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10vw;
+    color: white;
+    opacity: .5;
+    transition: .7s;
+    top: -10vh;
+    left: 24vw;
+}
+.ex3:hover{
+    transform: scale(1.5);
+    transition: .7s;
+    cursor: pointer;
+}
+.ex4 {
+    display: flex;
+    position: absolute;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10vw;
+    color: white;
+    opacity: .5;
+    transition: .7s;
+    top: 10vh;
+    left: 42vw;
+}
+.ex4:hover{
+    transform: scale(1.5);
+    transition: .7s;
+    cursor: pointer;
+}
+.ex5 {
+    display: flex;
+    position: absolute;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10vw;
+    color: white;
+    opacity: .5;
+    transition: .7s;
+    top: -5vh;
+    left: 58vw;
+}
+.ex5:hover{
+    transform: scale(1.5);
+    transition: .7s;
+    cursor: pointer;
+}
+.ex6 {
+    display: flex;
+    position: absolute;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10vw;
+    color: white;
+    opacity: .5;
+    transition: .7s;
+    top: 30vh;
+    left: 72vw;
+}
+.ex6:hover{
+    transform: scale(1.5);
+    transition: .7s;
+    cursor: pointer;
+}
+.ex7 {
+    display: flex;
+    position: absolute;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10vw;
+    color: white;
+    opacity: .5;
+    transition: .7s;
+    top: -10vh;
+    left: 88vw;
+}
+.ex7:hover{
+    transform: scale(1.5);
+    transition: .7s;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+}
+@media screen and (max-width: 1500px){
+    body{
+        background-color: aquamarine;
+    }
+}
+@media screen and (max-width: 500px){
+    body{
+        background-color: rgb(255, 0, 187);
+    }
+} 
+
+.p{
+    display: block;
+    margin:10vh;
+    position: absolute;
+    top: 23vw;
+    right:24vw;
+    font-family: "poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2vw;
+    justify-content: center;
+    color:white;
+   
+}
+.butt{
+ border: none; 
+            color:  white;
+            text-align: center; /* Center text */
+            text-decoration: none; /* Remove underlines */
+            display: inline-block; /* Display as inline block */
+            font-size: 30px; /* Font size */
+            margin: 6px 4px; /* Margin */
+            transition-duration: 0.4s; /* Transition duration */
+            cursor: pointer; /* Cursor style */
+            border-radius: 12px;
+}
+.btn{
+    display: inline-block;
+    margin-top: 0%;
+    position: absolute;
+    top:0%;
+    right:0%;
+}
+.random-text {
+    position: absolute;
+    font-family: "Arial", sans-serif;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    color: #FFF; /* White color */
+   
+}
+@media screen and (max-width: 450px){
+    body{
+        background-color: rgb(255, 0, 187);
+    }
+    .butt{
+        background-color: rgb(255, 0, 187);
+}
+}

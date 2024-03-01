@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qjh7mei.css">
+    <link rel="icon" type="image/png" href="favicon3.png">
+    <title>Document</title>
+</head>
+<body>
+    <div class="das">
+    <h1>DASHES</h1>
+</div>
+<div class="dot">
+    <h1>DOTS</h1>
+</div>
+
+<div class="p" style="display:contents">
+    <p>
+        So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them. 
+    </p>
+    <p>
+        So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them. 
+    </p>
+    <p>
+        So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them. 
+    </p>
+<p>
+    So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them. 
+</p>
+<p>
+    So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them. 
+</p>
+<p>
+    So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them. 
+</p>
+<p>
+    So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them. 
+</p>
+<p>
+    So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them. 
+</p>
+<p>
+    So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them. 
+</p>
+<p>
+    So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them. 
+</p>
+<p>
+    So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them. 
+</p>
+<p>
+    So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them. 
+</p>
+<p>
+    So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them. 
+</p>
+<p>
+    So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them. 
+</p>
+ 
+</div>
+<div class="btn">
+    <a href="../page3/index.html" class="butt">&#9664;</a>
+    <a href="../index.html" class="butt">&#127968;</a>
+    <a href="../page5/index.html" class="butt">&#9654;</a>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const das = document.querySelector('.das');
+        const dot = document.querySelector('.dot');
+        das.addEventListener('click', function() {
+            animateCharacter('-');
+        });
+        dot.addEventListener('click', function() {
+            animateCharacter('.');
+        });
+    });
+
+    function animateCharacter(character) {
+        const randomText = document.createElement('div');
+        randomText.textContent = character;
+        randomText.classList.add('random-text');
+        randomText.style.left = Math.random() * (window.innerWidth - 200) + 'px';
+        randomText.style.top = '-50px'; // Start from above the viewport
+        document.body.appendChild(randomText);
+        animate(randomText);
+    }
+
+    function animate(element) {
+        const endYPos = window.innerHeight + 100; // Move slightly below the viewport
+        const duration = Math.random() * 3000 + 2000; // Random duration between 2000ms and 5000ms
+        let startTime = null;
+
+        function step(currentTime) {
+            if (!startTime) startTime = currentTime;
+            const progress = currentTime - startTime;
+            const percentage = progress / duration;
+            const newYPos = percentage * endYPos;
+            element.style.top = newYPos + 'px';
+
+            if (percentage < 1) {
+                requestAnimationFrame(step);
+            } else {
+                element.remove();
+            }
+        }
+        requestAnimationFrame(step);
+    }
+</script>
+</body>
+</html>

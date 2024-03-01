@@ -1,0 +1,86 @@
+body{
+    background-color:rgb(0, 245, 111);
+    cursor: pointer;
+}
+
+.das{
+    display: block;
+    position: absolute;
+    top: -15vw;
+    left: 4vw;
+    font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+font-size: 10vw;
+}
+
+.dot{
+    display: block;
+    position: absolute;
+    top: 5vw;
+  left: 8vh;
+    font-family: "century-gothic", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 10vw; 
+}
+.p{
+    display:block;
+    position: absolute;
+    top: 90px;
+}
+.butt{
+    border: none; 
+               color:  black;
+               text-align: center; /* Center text */
+               text-decoration: none; /* Remove underlines */
+               display: inline-block; /* Display as inline block */
+               font-size: 30px; /* Font size */
+               margin: 6px 4px; /* Margin */
+               transition-duration: 0.4s; /* Transition duration */
+               cursor: pointer; /* Cursor style */
+               border-radius: 12px;
+   }
+.btn{
+    display: inline-block;
+    margin-top: 0%;
+    position: absolute;
+    top: 0%;
+    right:0%
+}
+@media screen and (max-width: 600px){
+    body{
+        background-color: rgb(0, 245, 111);
+    }
+    .das{
+        display: block;
+        position: absolute;
+        top:  5vw;
+        left: 10vw;
+        font-family: "century-gothic", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    font-size: 10vw;
+    }
+    
+    .dot{
+        display: block;
+        position: absolute;
+        top: 25vw;
+      left: 15vh;
+        font-family: "century-gothic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10vw; 
+    }
+}
+
+.random-text {
+    position: absolute;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 10vw;
+    color: #000000; 
+    cursor: pointer;/* White color */
+}
+    
