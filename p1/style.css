@@ -1,55 +1,52 @@
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: black;
+    cursor: pointer; 
+    animation: changeBackgroundColor 5s infinite;
 }
-
-.box1{
-    width: 14em;
-    height: 18em;
-    background-color: red;
-}
-#q{
-    font-family: "futura-pt", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-font-size: 23rem;
-position: relative;
-top: -3rem;
-left: 4rem;
-color: rgb(255, 255, 255);
+@keyframes changeBackgroundColor {
+    0% { background-color: rgb(255, 78, 78); } 
+    25% { background-color: blue; } 
+    50% { background-color: green; } 
+    75% { background-color: yellow; } 
+    100% { background-color: rgb(255, 78, 78); } 
 }
 
 .onPunc{
     color: #ffffff;
     display: block;
-    margin-top: 3em;
-    margin-left: 5.5em;
-    position: relative;
-    top: 12vw;
-    left: 8vw;
-    font-family: "roc-grotesk", sans-serif;
-font-weight: 700;
+    margin: 3em;
+    position: absolute;
+    top: -12vw;
+    left: -12vw;
+    font-family: "dazzle-unicase", sans-serif;
+font-weight: 500;
 font-style: normal;
-font-size: 3vw;
-cursor: pointer;
+font-size: 5vw;
+}
+.onPunc2{
+    color: #ffffff;
+    display: block;
+    margin: 3em;
+    position: relative;
+    top: 6vw;
+    left: -12vw;
+    font-family: "dazzle-unicase", sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 5vw;
 }
 .box {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #ffffff;
-    margin: 3vh;
+    background-color:rgb(255, 145, 1);
     position: absolute;
-    top: 10vw;
-    left: 15vw;
-    transition: width height;
-    transition: .7s;
-
+    top: 40vw;
+    left: 30vw;
+    font-size: 25rem;
 }
 .box:hover{
-    transition: .7s;
-    width: 100px;
-    height: 100px;
-    background-color: rgb(255, 185, 55);
+    background-color: white;
 
 }
 a:-webkit-any-link {
@@ -58,20 +55,18 @@ a:-webkit-any-link {
     text-decoration: underline;
 }
 .box2{
-    font-family: "roc-grotesk", sans-serif;
-font-weight: 700;
-font-style: normal;
-font-size: 25rem;
-color: white;
-margin: 3vh;
+    font-family: "dazzle-unicase", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+font-size: 15rem;
+color: red;
 position: absolute;
-top: 17vw;
+top: 28vw;
 left: 8vw;
-transition: font-size .7s;
+
 }
 .box2:hover{
-    color: red;
-font-size: 30rem;
+    color: white;
 
 }
 
@@ -80,111 +75,185 @@ a:-webkit-any-link {
     cursor: pointer;
 }
 .box3{
-    font-family: "roc-grotesk", sans-serif;
-font-weight: 700;
+    font-family: "dazzle-unicase", sans-serif;
+font-weight: 500;
 font-style: normal;
-font-size: 20rem;
-color: white;
-margin: 3vh;
+font-size: 15rem;
+color: rgb(0, 85, 255);
 position: absolute;
-top: -2vw;
-left: 25vw;
-transition: font-size;
-transition: .7s;
+top: 4vw;
+left: 22vw;
 }
 .box3:hover{
-    color: blue;
-    font-size: 27rem;
+    color: white;
 }
 .box4{
-    font-family: "roc-grotesk", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 10rem;
-    color: white;
-    margin: 3vh;
+    font-family: "dazzle-unicase", sans-serif;
+font-weight: 500;
+font-style: normal;
+    font-size: 15rem;
+    color: rgb(174, 0, 255);
     position: absolute;
     top: 10vw;
-    left: 80vh;
-    transition: font-size;
-    transition: .7s;
+    left: 73vh;
 }
 .box4:hover{
-    color: rgb(174, 0, 255);
-    transition: .7s;
-    font-size: 13rem;
+    color: white;
 }
 .box5{
-    font-family: "roc-grotesk", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 30rem;
-    color: white;
-    margin: 3vh;
+    font-family: "dazzle-unicase", sans-serif;
+font-weight: 500;
+font-style: normal;
+    font-size: 20rem;
+    color:rgb(0, 245, 111);
     position: absolute;
-    top: 11vw;
+    top: 21vw;
     left: 45vw;
-    transition: font-size;
-    transition: .7s;
 }
 .box5:hover{
-    color:rgb(0, 255, 0);
-    font-size: 32rem;
+    color: white;
 }
 .box6{
-    font-family: "roc-grotesk", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 20rem;
-    color: white;
-    margin: 3vh;
+    font-family: "dazzle-unicase", sans-serif;
+font-weight: 500;
+font-style: normal;
+    font-size: 15rem;
+    color:bisque;
     position: absolute;
     top: 5vw;
-    left: 60vw;
-    transition: font-size;
-    transition: .7s;
+    left: 57vw;
 }
 .box6:hover{
-    color: beige;
-    font-size: 24rem; 
+    color: white;
 }
 .box7{
-    font-family: "roc-grotesk", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 10rem;
-    color: white;
-    margin: 3vh;
+    font-family: "dazzle-unicase", sans-serif;
+font-weight: 500;
+font-style: normal;
+    font-size: 15rem;
+    color: rgb(255, 217, 0);
     position: absolute;
-    top: 5vw;
-    left: 75vw;
-    transition: font-size;
-    transition: .7s;
+    top: -2vw;
+    left: 70vw;
 }
 .box7:hover{
-    color: yellow;
-    font-size: 12rem;
+    color: white;
 }
 .box8{
-    font-family: "roc-grotesk", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 20rem;
-    color: white;
-    margin: 3vh;
+    font-family: "dazzle-unicase", sans-serif;
+font-weight: 500;
+font-style: normal;
+    font-size: 15rem;
+    color:rgb(238, 0, 255);
     position: absolute;
-    top: 10vw;
-    left: 80vw;
-    transition: font-size;
-    transition: .7s;
+    top: 20vw;
+    left: 75vw;
 }
 .box8:hover{
-    color: purple;
-    font-size: 24rem;
+    color: white;
 }
-
-@media screen and (max-width:736){
-.onPunc{
-    font-size: 2vw;
-}
+@media screen and (max-width:430px){
+    .onPunc{
+        color: #ffffff;
+        font-family: "dazzle-unicase", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10vw;
+    }
+    #on{
+        position: absolute;
+        top: 10vw;
+        left: 28vw;
+    }
+    .onPunc2{
+        color: #ffffff;
+        display: block;
+        margin: 3em;
+        position: relative;
+        top: 50vw;
+        left: -16vw;
+        font-family: "dazzle-unicase", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 5vw;
+    }
+    .box {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color:rgb(255, 145, 1);
+        position: absolute;
+        top: 47vw;
+        left: 2vw;
+    }
+    .box2{
+        font-family: "dazzle-unicase", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    font-size: 17rem;
+    color: red;
+    position: absolute;
+    top: 65vw;
+    left: 4vw;
+    }
+    .box3{
+        font-family: "dazzle-unicase", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13rem;
+    color: rgb(0, 85, 255);
+    position: absolute;
+    top: -15vw;
+    left: 5vw;
+    }
+    .box4{
+        font-family: "dazzle-unicase", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+        font-size: 13rem;
+        color: rgb(174, 0, 255);
+        position: absolute;
+        top: 3vw;
+        left: 10vh;
+    }
+    .box5{
+        font-family: "dazzle-unicase", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+        font-size: 17rem;
+        color:rgb(0, 245, 111);
+        position: absolute;
+        top: 35vw;
+        left: 35vw;
+    }
+    .box6{
+        font-family: "dazzle-unicase", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+        font-size: 15rem;
+        color:bisque;
+        position: absolute;
+        top: -10vw;
+        left: 65vw;
+    }
+    .box7{
+        font-family: "dazzle-unicase", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+        font-size: 12rem;
+        color: rgb(255, 217, 0);
+        position: absolute;
+        top: 90vw;
+        left: 50vw;
+    }
+    .box8{
+        font-family: "dazzle-unicase", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+        font-size: 20rem;
+        color:rgb(238, 0, 255);
+        position: absolute;
+        top: 64vw;
+        left: 25vw;
+    }
 }

@@ -18,7 +18,7 @@ opacity: .6;
 }
 
 .qu:hover{
-transform: scale(1.2);
+transform: scale(1.1);
 transition: .7s;
 opacity: .4;
 cursor: pointer;
@@ -31,6 +31,7 @@ cursor: pointer;
     top: 35vw;
     text-align: center;
     color:rgb(255, 255, 255);
+    opacity: .5;
 }
 .p2{
     display: block;
@@ -52,7 +53,7 @@ cursor: pointer;
                margin: 6px 4px; /* Margin */
                transition-duration: 0.4s; /* Transition duration */
                cursor: pointer; /* Cursor style */
-               border-radius: 12px;
+               border-radius: 19px;
    }
 .btn{
     display: inline-block;
@@ -63,11 +64,12 @@ cursor: pointer;
 }
 .random-text {
     position: absolute;
-    font-family: "ruddy", sans-serif;
-font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+font-weight: 100;
 font-style: normal;
     font-size: 1.5vw;
     color: #FFFFFF; 
+    opacity: .5;
 }
 .toggle-button {
     position: absolute;
@@ -79,7 +81,7 @@ font-style: normal;
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 1vw;
-    top: 8vw;
+    top: 17vw;
     left: 50vw;
     transform: translateX(-50%);
     opacity: .6;

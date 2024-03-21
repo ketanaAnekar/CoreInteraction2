@@ -1,0 +1,120 @@
+body{ 
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+.core{
+    display: inline-block;
+    margin-top:0%;
+    position: absolute;
+    top:0%;
+    font-family: "forma-djr-text", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+}
+.ket{
+    display: inline-block;
+    margin-top:0%;
+    position: absolute;
+    top:0%;
+    right:0%;
+    font-family: "forma-djr-text", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+}
+.stamp1{
+    display: inline-block;
+    margin: 2vh;
+    position: absolute;
+    left:-2vw;
+    top: 2vw;
+}
+.stamp2{
+    display: inline-block;
+    margin: 2vh;
+    position: relative;
+    right: -50vw;
+    top: -3vw;
+}
+.stamp3{
+    display: block;
+    margin: 2vh;
+    position: absolute;
+    right: 28vw;
+    top: 15vw;
+}
+.stamp1, .stamp2, .stamp3 {
+    animation: rotate 10s linear infinite; /* Apply rotation animation */
+}
+.stamp1:hover, .stamp2:hover, .stamp3:hover {
+    animation-play-state: paused; /* Pause animation on hover */
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg); /* Start from 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* Rotate to 360 degrees (full circle) */
+    }
+}
+
+img {
+    width: 45vw; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media screen and (max-width: 430px){
+    .core{
+        display: inline-block;
+        margin-top:0%;
+        position: absolute;
+        top:0%;
+        left: 10vw;
+        font-family: "forma-djr-text", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3vh;
+        color: rgb(255, 255, 255);
+    } 
+    .ket{
+        display: block;
+        margin-bottom:0%;
+        position: relative;
+        top: 210vw;
+        left:25vw;
+        font-family: "forma-djr-text", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3vh;
+        color: rgb(255, 255, 255);
+    }
+    .stamp1{
+        display: inline-block;
+        margin: 2vh;
+        position: absolute;
+        left:-2vw;
+        top: 10vw;
+    }
+    .stamp2{
+        display: inline-block;
+        margin: 2vh;
+        position: relative;
+        left: 5vw;
+        top: 60vw;
+    }
+    .stamp3{
+        display: block;
+        margin: 2vh;
+        position: absolute;
+        right: 28vw;
+        top: 120vw;
+    }
+img {
+    width: 70vw; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+}
