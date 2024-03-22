@@ -22,8 +22,9 @@ color:rgb(4, 0, 129)
     color:rgb(4, 0, 129);
 }
 .p2{
+    margin: 6vh;
     position:relative;
-    top: 490px;
+    top:29vw;
     font-family: "poppins", sans-serif;
     font-weight: 300;
     font-style: normal;

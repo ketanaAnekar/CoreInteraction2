@@ -41,7 +41,6 @@ animation: scaleAnimation 2s infinite;
 }
 .p{
     position: absolute;
-    top: 200px;
     font-family: "poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -49,11 +48,17 @@ animation: scaleAnimation 2s infinite;
 }
 .p2{
     position: absolute;
-    top: 400px;
+    top: 10vw;
     font-family: "poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 1.2rem;
     color: red;
+}
+p{
+    margin: 3vh;
+    text-align: center;
+    opacity: .5;
 }
 .butt{
     border: none; 

@@ -73,7 +73,7 @@ img {
         margin-top:0%;
         position: absolute;
         top:0%;
-        left: 10vw;
+        left: 17vw;
         font-family: "forma-djr-text", sans-serif;
         font-weight: 700;
         font-style: normal;
@@ -84,7 +84,7 @@ img {
         display: block;
         margin-bottom:0%;
         position: relative;
-        top: 210vw;
+        top: 250vw;
         left:25vw;
         font-family: "forma-djr-text", sans-serif;
         font-weight: 700;
@@ -96,7 +96,7 @@ img {
         display: inline-block;
         margin: 2vh;
         position: absolute;
-        left:-2vw;
+        left: 10vw;
         top: 10vw;
     }
     .stamp2{
