@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qjh7mei.css">
+    <link rel="icon" type="image/png" href="./photos/retro/UNOR.png">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="unohead">THE UNO COLLECTION</h1>
+    <div id="controls">
+        <div class="row-flexbox">
+            <label for="completed-filter" class="pick">PICK YOUR UNO!</label>
+            <select id="pickYourUno">
+                <option value="all">All Uno</option>
+                <option value="classic">Classic</option>
+                <option value="fightsGuaranteed">Fights Guaranteed</option>
+                <option value="drinkFriendly">Drink Friendly</option>
+                <option value="kidFriendly">Kid Friendly</option>
+            </select>
+        </div>
+    </div>
+    <button id="toggleButton" class="toggle-button" onclick="toggleSidebar()">ABOUT</button>
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-content">
+            <h2 class="welcome">WELCOME TO KET'S COLLECTION!</h2>
+            <p class="para">This page showcases all the types of Uno's I've collected over the past couple of months. There some some cards from each deck displayed, and always in the order of most fun to least fun to play!</p>
+            <!-- Add more content as needed -->
+        </div>
+    </div>
+    <div id="uno"></div>
+
+</body>
+</html>

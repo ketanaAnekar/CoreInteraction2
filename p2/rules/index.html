@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qjh7mei.css">
+    <link rel="icon" type="image/png" href="../collection/photos/retro/UNOR.png">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1 class="head">BUT WHY UNO?</h1>
+</div>
+<div class="sentences-container">
+    <div class="sentence">(mostly) everybody knows the game</div>
+    <div class="sentence">can be played whenever/whenever</div>
+    <div class="sentence">can play with 2-god knows how many ever people</div>
+    <div class="sentence">individualistic game where you play for yourself</div>
+    <div class="sentence">are multiple versions of the game</div>
+    <div class="sentence">it’s an easy game to understand</div>
+    <div class="sentence">uno cards are just appealing to all age groups</div>
+    <div class="sentence">its just so fun</div>
+</div>
+<div class="sentence">got into it while being bored during witer break</div>
+</div>
+
+<div class="container">
+    <h1 id="review-rules">REVIEW THE RULES</h1>
+</div>
+<div class="green-boxes">
+    <div class="box"><a href="https://www.unorules.com/"><img src="../collection/photos/classic/unocard.png" alt="Image 1"></a></div>
+    <div class="box"><a href="https://www.youtube.com/watch?v=_7zD37gCQyw"><img src="../collection/photos/flex/unoflexcard.png" alt="Image 1"></a></div>
+    <div class="box"><a href="https://www.unorules.com/uno-dare-rules/"><img src="../collection/photos/dare/darecard.png" alt="Image 1"></a></div>
+    <div class="box"><a href="https://www.unorules.com/uno-flip-rules/"><img src="../collection/photos/flip/flipcard.png" alt="Image 1"></a></div>
+    <div class="box"><a href="https://www.unorules.com/uno-all-wild-rules/"><img src="../collection/photos/allwild/allwildcard.png" alt="Image 1"></a></div>
+    <div class="box"><a href="https://www.unorules.com/"><img src="../collection/photos/retro/UNOR.png" alt="Image 1"></a></div>
+</div>
+<a href="../collection/index.html">
+<div class="collection">
+    <h1>VIEW THE COLLECTION</h1>
+</div>
+</a>
+<a href="#" onclick="scrollToRules()">
+    <div class="review">
+        <h1>GO TO RULES</h1>
+    </div>
+</a>
+<script>
+    const head = document.querySelector('.head');
+    const sentences = document.querySelectorAll('.sentence');
+
+    head.addEventListener('mouseenter', () => {
+        sentences.forEach(sentence => {
+            const randomX = Math.random() * window.innerWidth;
+            const randomY = Math.random() * window.innerHeight;
+            sentence.style.left = `${randomX}px`;
+            sentence.style.top = `${randomY}px`;
+            sentence.classList.add('show');
+        });
+    });
+
+    head.addEventListener('mouseleave', () => {
+        sentences.forEach(sentence => {
+            sentence.classList.remove('show');
+        });
+    }); 
+    function scrollToRules() {
+        const reviewRulesHeading = document.getElementById('review-rules');
+        reviewRulesHeading.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
