@@ -18,8 +18,53 @@ img{
     top: 8rem;
     left: 11rem;
 }
-img:hover {
+.container:hover img {
     transform: rotateY(180deg);
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar-content {
+    padding: 20px;
+    color: white;
+}
+.welcome{
+    font-family: "dazzle-unicase", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.para{
+    font-family: "futura-pt", sans-serif;
+font-weight: 300;
+font-style: italic;
+}
+.toggle-button {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl; /* Vertical writing mode */
+    text-orientation: upright; /* Text orientation */
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px 10px; /* Adjust padding as needed */
+    z-index: 9999; /* Ensure button is on top of other elements */
+}
+
+.toggle-button:hover {
+    color: #00ff00;
 }
 @media screen and (max-width: 849px){
 .container{
@@ -29,3 +74,13 @@ img:hover {
     left: 4rem;
 }
 }
+@media screen and (max-width: 500px){
+    .container{
+        display: inline-flex;
+        position: absolute;
+        top: 19rem;
+        left: 4rem;
+    } 
+}
+
+

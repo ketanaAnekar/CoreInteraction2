@@ -7,7 +7,7 @@ body{
     cursor: none;
 }
 body, html{
-    cursor: url(./collection/photos/cursor/reversecursor.png), auto;
+    cursor: url(./photos/cursor/reversecursor.png), auto;
 }
 
 .filter-options {
@@ -28,7 +28,8 @@ body, html{
     position: relative;
 }
 .unohead{
-    font-size: 4rem;
+    font-size: 6rem;
+    color: red;
     text-align: center;
     font-family: "dazzle-unicase", sans-serif;
     font-weight: 700;
@@ -36,11 +37,11 @@ body, html{
 }
 .pick{
     font-family: "dazzle-unicase", sans-serif;
+    color: yellow;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
-
 .uno-image {
     position: absolute;
     transition: opacity 0.5s ease-in-out;
@@ -60,55 +61,37 @@ body, html{
     width: 20vh;
 }
 .home{
-    margin-top: 0%;
     position: absolute;
+    top: 4vw;
+    right: 4vh;
+    font-family: "dazzle-unicase", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    color: green;
+}
+@media screen and (max-width: 500px){
+    .unohead{
+        font-size: 4rem;
+        text-align: center;
+        font-family: "dazzle-unicase", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .pick{
+        font-family: "dazzle-unicase", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 4vw;
+    }
+    .home{
+        position: absolute;
+    top: 5vw;
     right: 0%;
     font-family: "dazzle-unicase", sans-serif;
     font-weight: 700;
     font-style: normal;
-}
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: rgb(0, 0, 0);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidebar-content {
-    padding: 20px;
-    color: white;
-}
-.welcome{
-    font-family: "dazzle-unicase", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-.para{
-    font-family: "futura-pt", sans-serif;
-font-weight: 300;
-font-style: italic;
-}
-.toggle-button {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    writing-mode: vertical-rl; /* Vertical writing mode */
-    text-orientation: upright; /* Text orientation */
-    font-size: 20px;
-    background-color: transparent;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 20px 10px; /* Adjust padding as needed */
-    z-index: 9999; /* Ensure button is on top of other elements */
-}
-
-.toggle-button:hover {
-    color: #007bff;
+    color: green;
+    font-size: 015px;
+    }
 }

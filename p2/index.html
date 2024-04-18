@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/qjh7mei.css">
     <link rel="icon" type="image/png" href="../p2/collection/photos/retro/UNOR.png">
-    <title>Document</title>
+    <title>UNO!</title>
 </head>
 <body>
     <div class="container">
@@ -20,5 +20,22 @@
     <img src="./collection/photos/homepage/OOO.png" alt="OCard">
 </a>
 </div>
+<button id="toggleButton" class="toggle-button" onclick="toggleSidebar()">ABOUT</button>
+<div id="sidebar" class="sidebar">
+    <div class="sidebar-content">
+        <h2 class="welcome">WELCOME TO KET'S COLLECTION!</h2>
+        <p class="para">This site takes you through my UNO collection, why I started collectin uno in the first place, some general UNO rules and different catergories of my collection. There are some cards from each deck displayed, and always in the order of most fun to least fun to play!</p>
+    </div>
+</div>
+<script>
+    function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+    } else {
+        sidebar.style.width = "250px";
+    }
+}
+</script>
 </body>
 </html>

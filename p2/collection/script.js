@@ -4,7 +4,7 @@ const unoVariations =
         "title": "Retro",
         "funToPlay": 2,
         "imgFolder": "retro",
-        "img": ["retro-box.png","r0green.png", "r1yellow.png", "r5red.png", "r6blue.png", "rdraw2.png", "retro+4wild.png", "reverseflip.png", "rreverseblue.png", "rwild.png"],
+        "img": ["retro-box.png","r0green.png", "r1yellow.png", "r5red.png", "r6blue.png", "rdraw2.png", "retro+4wild.png", "rreverseblue.png", "rwild.png"],
         "classic": true,
         "fightGauranteed": false,
         "aesthetic": true,
@@ -60,7 +60,7 @@ const unoVariations =
         "title": "Flip",
         "funToPlay": 4,
         "imgFolder": "flip",
-        "img": ["flip-box.png", "+5flip.png","3flip.png","7flip.png","allskipflip.png"],
+        "img": ["flip-box.png", "+5flip.png","3flip.png","7flip.png","allskipflip.png","reverseflip.png"],
         "classic": false,
         "fightGauranteed": true,
         "aesthetic": false,
@@ -124,12 +124,4 @@ function updateControls() {
         showCategory = pickYourUno.value;
         renderContent();
     });
-}
-function toggleSidebar() {
-    const sidebar = document.getElementById("sidebar");
-    if (sidebar.style.width === "250px") {
-        sidebar.style.width = "0";
-    } else {
-        sidebar.style.width = "250px";
-    }
 }
