@@ -2,35 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qjh7mei.css">
+    <link rel="icon" type="image/png" href="blu.png">
     <title>Document</title>
 </head>
 <body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Time & Music</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-</head>
-<body>
-  <h1>FLORIDA KILOS</h1>
-  <h2>LANA DEL REY</h2>
-  <audio id="audioPlayer" controls>
-    <source src="Florida Kilos.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  <div id="controls">
-    <label for="speedSlider">slow</label>
-    <input type="range" id="speedSlider" min="0.5" max="2" step="0.1" value="1">
-    
-    <label for="speedSlider">fast</label>
-    <button id="playPauseBtn">Play/Pause</button>
-  </div>
-  <script src="script.js"></script>
-
+    <audio id="audio" autoplay loop>
+        <source src="" type="audio/mp3">
+    </audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="sketch.js"></script>
 </body>
 </html>
